@@ -15,7 +15,7 @@ int len_array(char chaine[])
 
 char* alloc_chaine(char chaine[])
 {
-    return malloc(sizeof(char) * len_array(chaine));
+    return (char*) malloc(sizeof(char) * len_array(chaine));
 }
 
 void copy_chaine(char chaine[], char* mem)
@@ -36,6 +36,7 @@ int occurences_e(char* chaine)
     return res;
 }
 
+/*
 int main()
 {
     char chars[] = "electricite";
@@ -43,3 +44,4 @@ int main()
     copy_chaine(chars, chaine);
     printf("Occurences de E dans %s : %d\n", chars, occurences_e(chaine));
 }
+*/
