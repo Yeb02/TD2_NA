@@ -11,9 +11,3 @@ int mylen(char* s)
 
     return res;
 }
-
-int main()
-{
-    char* s = "abc";
-    printf("%d", mylen(s));
-}
